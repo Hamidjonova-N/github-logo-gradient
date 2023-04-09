@@ -29,8 +29,86 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1550px;
+  height: 100vh;
+  padding: 5vh 30px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: rgb(243, 237, 230); */
+  /* background-color: rgba(209, 107, 165, 0.2); */
+  background-image: linear-gradient(
+    to right top,
+
+    rgba(209, 107, 165, 0.5),
+    rgba(54, 122, 242, 0.5)
+  );
+}
+
+.logo-wrapper,
+.text-wrapper {
+  width: 100%;
+  max-width: 725px;
+  height: 90vh;
+  border-radius: 50px;
+}
+
+.logo-wrapper {
+  background-image: url("/img/github-logo.png"),
+    linear-gradient(
+      to right top,
+      #d16ba5,
+      #c082c8,
+      #a798df,
+      #8facec,
+      #80bdee,
+      #73bdee,
+      #65beee,
+      #54beed,
+      #29b0f2,
+      #00a0f6,
+      #008ef6,
+      #367af2
+    );
+  background-repeat: no-repeat;
+  background-size: 500px, 100%;
+  background-position: center;
+}
+
+.text-wrapper {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading,
+.profile-name {
+  font-family: "Montserrat", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c082c8,
+    #a798df,
+    #80bdee,
+    #54beed,
+    #29b0f2,
+    #367af2
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  padding: 5px;
+}
+
+.heading {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.profile-name {
+  font-size: 70px;
 }
